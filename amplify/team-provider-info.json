@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-shoabvlogapp-dev-145701-authRole",
+      "UnauthRoleArn": "arn:aws:iam::633890674149:role/amplify-shoabvlogapp-dev-145701-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::633890674149:role/amplify-shoabvlogapp-dev-145701-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-shoabvlogapp-dev-145701-deployment",
+      "UnauthRoleName": "amplify-shoabvlogapp-dev-145701-unauthRole",
+      "StackName": "amplify-shoabvlogapp-dev-145701",
+      "StackId": "arn:aws:cloudformation:us-east-1:633890674149:stack/amplify-shoabvlogapp-dev-145701/1911f0a0-16f8-11ed-8959-12a0bbda605b",
+      "AmplifyAppId": "d199l27zhlmvsy"
+    }
+  }
+}
