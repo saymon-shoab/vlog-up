@@ -10,6 +10,11 @@
       "StackName": "amplify-shoabvlogapp-dev-145701",
       "StackId": "arn:aws:cloudformation:us-east-1:633890674149:stack/amplify-shoabvlogapp-dev-145701/1911f0a0-16f8-11ed-8959-12a0bbda605b",
       "AmplifyAppId": "d199l27zhlmvsy"
+    },
+    "categories": {
+      "auth": {
+        "shoabvlogapp797a822f": {}
+      }
     }
   }
 }
