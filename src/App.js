@@ -7,10 +7,11 @@ import Profile from './Page/Profile';
 import MyVlogs from './Page/MyVlogs';
 import Id from './Page/Id';
 import EditVlog from './Page/EditVlog';
+import Navbar from './Component/Navber'
 function App() {
   return (
     <div className=" mx-24">
-    {/* <Navbar /> */}
+    <Navbar />
     <h3 className=' font-extralight text-5xl text-green-400'>hello world</h3>
     <Routes>
       <Route path="/" element={<Home/>}/>
