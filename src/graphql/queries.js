@@ -1,11 +1,11 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getPost = /* GraphQL */ `
-  query GetPost($id: ID!) {
-    getPost(id: $id) {
+export const getBlogpost = /* GraphQL */ `
+  query GetBlogpost($id: ID!) {
+    getBlogpost(id: $id) {
       id
-      tittle
+      title
       content
       username
       coverImage
@@ -14,16 +14,16 @@ export const getPost = /* GraphQL */ `
     }
   }
 `;
-export const listPosts = /* GraphQL */ `
-  query ListPosts(
-    $filter: ModelPostFilterInput
+export const listBlogposts = /* GraphQL */ `
+  query ListBlogposts(
+    $filter: ModelBlogpostFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listPosts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listBlogposts(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
-        tittle
+        title
         content
         username
         coverImage
@@ -34,15 +34,15 @@ export const listPosts = /* GraphQL */ `
     }
   }
 `;
-export const postsByUsername = /* GraphQL */ `
-  query PostsByUsername(
+export const blogsByUsername = /* GraphQL */ `
+  query BlogsByUsername(
     $username: String!
     $sortDirection: ModelSortDirection
-    $filter: ModelPostFilterInput
+    $filter: ModelBlogpostFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    postsByUsername(
+    blogsByUsername(
       username: $username
       sortDirection: $sortDirection
       filter: $filter
@@ -51,7 +51,7 @@ export const postsByUsername = /* GraphQL */ `
     ) {
       items {
         id
-        tittle
+        title
         content
         username
         coverImage

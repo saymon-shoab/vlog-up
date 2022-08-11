@@ -2,5 +2,11 @@
   "AppSyncApiName": "shoabvlogapp",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
-  "AuthModeLastUpdated": "2022-08-10T08:09:43.625Z"
+  "AuthModeLastUpdated": "2022-08-10T08:09:43.625Z",
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authshoabvlogapp797a822f",
+      "Outputs.UserPoolId"
+    ]
+  }
 }

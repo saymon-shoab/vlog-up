@@ -3,7 +3,15 @@
     "shoabvlogapp": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "shoabvlogapp797a822f",
+          "attributes": [
+            "UserPoolId"
+          ]
+        }
+      ],
       "output": {
         "authConfig": {
           "defaultAuthentication": {
@@ -14,7 +22,14 @@
               "description": "public api key"
             }
           },
-          "additionalAuthenticationProviders": []
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authshoabvlogapp797a822f"
+              }
+            }
+          ]
         }
       }
     }
@@ -43,6 +58,13 @@
           "EMAIL"
         ]
       }
+    }
+  },
+  "storage": {
+    "shoabPostImagesBlogapp": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": []
     }
   }
 }

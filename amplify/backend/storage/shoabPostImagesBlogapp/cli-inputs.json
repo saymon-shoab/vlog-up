@@ -1,0 +1,16 @@
+{
+  "resourceName": "shoabPostImagesBlogapp",
+  "policyUUID": "454eaa06",
+  "bucketName": "shoabvlogappf20843d4903949e890ac57019301ace6",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

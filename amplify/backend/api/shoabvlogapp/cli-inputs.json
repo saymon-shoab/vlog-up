@@ -11,6 +11,11 @@
       "keyDescription": "public api key"
     },
     "conflictResolution": {},
-    "additionalAuthTypes": []
+    "additionalAuthTypes": [
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authshoabvlogapp797a822f"
+      }
+    ]
   }
 }

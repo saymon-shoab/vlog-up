@@ -1,14 +1,14 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createPost = /* GraphQL */ `
-  mutation CreatePost(
-    $input: CreatePostInput!
-    $condition: ModelPostConditionInput
+export const createBlogpost = /* GraphQL */ `
+  mutation CreateBlogpost(
+    $input: CreateBlogpostInput!
+    $condition: ModelBlogpostConditionInput
   ) {
-    createPost(input: $input, condition: $condition) {
+    createBlogpost(input: $input, condition: $condition) {
       id
-      tittle
+      title
       content
       username
       coverImage
@@ -17,14 +17,14 @@ export const createPost = /* GraphQL */ `
     }
   }
 `;
-export const updatePost = /* GraphQL */ `
-  mutation UpdatePost(
-    $input: UpdatePostInput!
-    $condition: ModelPostConditionInput
+export const updateBlogpost = /* GraphQL */ `
+  mutation UpdateBlogpost(
+    $input: UpdateBlogpostInput!
+    $condition: ModelBlogpostConditionInput
   ) {
-    updatePost(input: $input, condition: $condition) {
+    updateBlogpost(input: $input, condition: $condition) {
       id
-      tittle
+      title
       content
       username
       coverImage
@@ -33,14 +33,14 @@ export const updatePost = /* GraphQL */ `
     }
   }
 `;
-export const deletePost = /* GraphQL */ `
-  mutation DeletePost(
-    $input: DeletePostInput!
-    $condition: ModelPostConditionInput
+export const deleteBlogpost = /* GraphQL */ `
+  mutation DeleteBlogpost(
+    $input: DeleteBlogpostInput!
+    $condition: ModelBlogpostConditionInput
   ) {
-    deletePost(input: $input, condition: $condition) {
+    deleteBlogpost(input: $input, condition: $condition) {
       id
-      tittle
+      title
       content
       username
       coverImage

@@ -2,12 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Auth, Hub } from 'aws-amplify'
 import { useEffect, useState } from 'react'
-import '../ConfugureAmplify'
+import "../ConfigureAmplify"
 
-const Navber = () => {
+const Navbar = () => {
     const [signedInUser, setSignedInUser] = useState(false);
-  
-    
+
     const authListnr = async ()=>{
         Hub.listen('auth', (data)=> {
           switch(data.payload.event){
@@ -30,7 +29,7 @@ const Navber = () => {
     useEffect(()=>{
         authListnr()
      },[])
-
+   
   return (
     <div>
     <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
@@ -63,4 +62,4 @@ const Navber = () => {
   )
 }
 
-export default Navber
+export default Navbar
